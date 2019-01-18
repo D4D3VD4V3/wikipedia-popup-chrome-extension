@@ -9,6 +9,7 @@ function openWindow(param) {
 		url: "https://en.m.wikipedia.org/wiki/".concat(param),
 		type: "popup",
 		focused: true,
+		incognito: true,
 		width: parseInt(width, 10),
 		height: parseInt(height, 10)
 	})

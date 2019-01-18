@@ -12,7 +12,5 @@ window.addEventListener('load', function load(event) {
 		}, function () {
 			console.log('Value is set to ' + height);
 		});
-
-
 	};
 });
