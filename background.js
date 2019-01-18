@@ -6,7 +6,7 @@ function openWindow(param) {
 	if (height === undefined)
 		height = 500;
 	chrome.windows.create({
-		url: "https://en.wikipedia.org/wiki/".concat(param).concat("?mobileaction=toggle_view_mobile"),
+		url: "https://en.m.wikipedia.org/wiki/".concat(param),
 		type: "popup",
 		focused: true,
 		width: parseInt(width, 10),

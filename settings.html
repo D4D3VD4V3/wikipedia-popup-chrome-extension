@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="script.js"></script>
-
-
+	<script src="script.js"></script>
+	<style> 
+	input[type=submit]{
+	  background-color: #4CAF50;
+	  border: none;
+	  border-radius: 15px;
+	  color: white;
+	  padding: 8px 32px;
+	  text-decoration: none;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	</style>
 </head>
+
 <body>
-
-<form name="form1">
-  Width: <input type="number" min="250" placeholder="min 250" name="width"/>
-  Height: <input type="number" min="250" placeholder="min 250" name="height"/>
-  <center><input id="save" type="submit" value="Save"/></center>
-</form>
-
+	<fieldset>
+		<legend align="center"><h3>Settings</h3></legend>
+		<form name="form1">
+		  Popup width: <input type="number" name="width"/>
+		  Popup height: <input type="number" name="height"/>
+		  <center><input id="save" type="submit" value="Save" /></center>
+		</form>
+	</fieldset>
 </body>
 </html>

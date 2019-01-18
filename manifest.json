@@ -18,6 +18,10 @@
   },
 
   "browser_action": {
+	"default_title": "Wikipedia Popup (Select a word and hit Alt+W)",
 	"default_popup": "settings.html"
+  },
+  "icons": {
+	"128": "icon/wikipedia-logo-128.png"
   }
 }
