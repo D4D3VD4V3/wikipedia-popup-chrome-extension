@@ -33,3 +33,15 @@ chrome.commands.onCommand.addListener(function (command) {
 	});
 
 });
+
+chrome.contextMenus.create({
+    id: "lelel",
+    title: "Search Wikipedia for '%s'",
+    contexts: ["selection"]
+});
+
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
+    if (info.menuItemId == "lelel") {
+        openWindow(info.selectionText);
+    }
+});
