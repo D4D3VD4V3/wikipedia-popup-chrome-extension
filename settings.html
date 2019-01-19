@@ -12,17 +12,26 @@
 	  text-decoration: none;
 	  margin: 4px 2px;
 	  cursor: pointer;
+	  width: 100%;
+	}
+	input[type=number]{
+	  width: 100%;
 	}
 	</style>
 </head>
 
 <body>
+	<p id="msg"></p>
 	<fieldset>
 		<legend align="center"><h3>Settings</h3></legend>
-		<form name="form1">
-		  Popup width: <input type="number" name="width"/>
-		  Popup height: <input type="number" name="height"/>
-		  <center><input id="save" type="submit" value="Save" /></center>
+		<form name="form1" autocomplete="off">
+			
+			Popup width (pixels): <input type="number" name="width"/>
+			Popup height (pixels): <input type="number" name="height"/>
+			<div style="padding: 10px;">
+				<input id="save" type="submit" value="Save" />
+				<input id="hotkey" type="submit" value="Configure hotkey" />
+			</div>
 		</form>
 	</fieldset>
 </body>

@@ -1,9 +1,9 @@
 {
   "name": "Wikipedia Popup",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Wikipedia popup for selected text",
   "manifest_version": 2,
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["activeTab", "storage", "notifications"],
   "commands": {
     "selected-text": {
         "suggested_key": {
