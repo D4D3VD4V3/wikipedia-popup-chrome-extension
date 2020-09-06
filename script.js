@@ -19,16 +19,6 @@ window.addEventListener('load', function load(event) {
 	});
 	document.getElementById('hotkey').onclick = function () {
 		chrome.tabs.create({ url: "chrome://extensions/shortcuts" });
-		chrome.notifications.create(null, {
-			type: "basic",
-			iconUrl: "icon/wikipedia-logo-128.png",
-			title: "Help message",
-			buttons: [{
-            title: "KTHX"
-			}, {
-            title: "Shut up"
-			}],
-			message: "Click on the text field in 'Invoke Wikipedia Popup' and perform your desired hotkey."}, function(){});
 		};
 	
 	document.getElementById('save').onclick = function () {
