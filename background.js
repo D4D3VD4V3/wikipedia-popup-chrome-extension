@@ -1,12 +1,15 @@
-var width, height;
+var width, height, lang;
 
 function openWindow(param) {
 	if (width === undefined)
 		width = 500;
 	if (height === undefined)
 		height = 500;
+	if (lang === undefined)
+		lang = "en";
+	
 	chrome.windows.create({
-		url: "https://en.m.wikipedia.org/wiki/".concat(param),
+		url: "https://" + lang + ".m.wikipedia.org/wiki/"+ param,
 		type: "popup",
 		focused: true,
 		incognito: true,
@@ -25,6 +28,9 @@ chrome.commands.onCommand.addListener(function (command) {
 		});
 		chrome.storage.sync.get(['wiki_height'], function (result) {
 			height = result.wiki_height;
+		});
+		chrome.storage.sync.get(['wiki_lang'], function (result) {
+			lang = result.wiki_lang;
 			openWindow(selection[0]);
 		});
 		console.log(width);
