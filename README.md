@@ -1,5 +1,5 @@
 # Wikipedia Popup Chrome Extension
-Download from Chrome Web Store: https://chrome.google.com/webstore/detail/wikipedia-popup/cleeghampfhpphpmcjimpmcamadmmilm
+[![Download](chromebadge.png "Download from the Chrome Web Store")](https://chrome.google.com/webstore/detail/wikipedia-popup/cleeghampfhpphpmcjimpmcamadmmilm)
 
 Select some text on a webpage and press Alt+W to quickly view the Wikipedia entry for your selection.
 
@@ -18,3 +18,7 @@ Select some text on a webpage and press Alt+W to quickly view the Wikipedia entr
 - Supports over 300 languages of Wikipedia.
 
 To change the default hotkey, click on the extension icon and click the 'Configure hotkey' button.
+## Screenshots
+[![Screenshot1](screenshot1.jpg "Screenshot")]()
+
+[![Screenshot1](screenshot2.jpg "Screenshot")]()
